@@ -14,4 +14,12 @@ public class EventTest {
     Event testEvent = new Event(20, "Indian", "Juice", "Petting Zoo");
     assertEquals(20, testEvent.getNumberOfGuests());
   }
+
+  @Test
+  public void newEvent_getsTypeOfFood_String() {
+    Event testEvent = new Event(20, "Indian", "Juice", "Petting Zoo");
+    assertEquals("Indian", testEvent.getTypeOfFood());
+  }
+
+
 }
