@@ -52,7 +52,7 @@ public class Event {
 
     int totalCost = (guests * selectionValue.get(food)) + (guests * selectionValue.get(drink)) + selectionValue.get(entertainment);
 
-    return 10;
+    return totalCost;
   }
 
 }
