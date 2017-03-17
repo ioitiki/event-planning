@@ -10,7 +10,7 @@ _Event Planning is an app developed with Java that calculates the approximate co
 
 ## Setup/Installation Requirements
 
-* _Clone the Event Planning repository [here](https://github.com/ioitiki/event-planning.git)._
+* _Clone the Event Planning repository [here](https://github.com/ioitiki/event-planning)._
 * _Brew or Scoop install gradle._
 * _Compolie and run._
 
