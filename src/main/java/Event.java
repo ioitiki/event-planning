@@ -31,4 +31,8 @@ public class Event {
   public String getTypeOfDrink() {
     return typeOfDrink;
   }
+
+  public String getTypeOfEntertainment() {
+    return "Bouncy Gym";
+  }
 }
