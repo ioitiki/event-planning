@@ -33,5 +33,11 @@ public class EventTest {
     assertEquals("Petting Zoo", testEvent.getTypeOfEntertainment());
   }
 
+  @Test
+  public void newEvent_calculateTotalCostOfEvent_Int() {
+    Event testEvent = new Event(20, "Indian", "Juice", "Petting Zoo");
+    assertEquals(275, testEvent.calculateEventCost(20, "Indian", "Juice", "Petting Zoo"));
+  }
+
 
 }
