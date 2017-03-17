@@ -33,6 +33,6 @@ public class Event {
   }
 
   public String getTypeOfEntertainment() {
-    return "Bouncy Gym";
+    return typeOfEntertainment;
   }
 }
