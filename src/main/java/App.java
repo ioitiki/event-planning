@@ -2,6 +2,7 @@ import java.io.Console;
 import java.util.List;
 import java.util.ArrayList;
 import static java.util.Arrays.asList;
+import java.text.DecimalFormat;
 
 public class App {
   public static void main(String[] args){
@@ -9,6 +10,9 @@ public class App {
 
     String couponCode1 = "coupon1";
     String couponCode2 = "coupon2";
+    Boolean running = true;
+
+    DecimalFormat df = new DecimalFormat("#.00");
 
     System.out.println("-----------------------------------------------------");
     System.out.println("How many guests are you expecting?");
@@ -34,16 +38,28 @@ public class App {
     System.out.println("\nYour total cost is $" + eventCost + ".00.\n");
 
     System.out.println("__________________________________________________");
-    System.out.println("If you have a coupon code please enter it  now to see your discounted price.");
-    String userCoupon = console.readLine();
 
-    if (userCoupon.equals(couponCode1)) {
-      double eventCostWithCoupon1 = (eventCost * .8);
-      System.out.println("\nYour updated total cost is $" + eventCostWithCoupon1);
-    } else if (userCoupon.equals(couponCode2)) {
-      int eventCostWithCoupon2 = eventCost - 50;
-      System.out.println("\nYour updated total cost is $" + eventCostWithCoupon2 + ".00.\n");
+    while (running) {
+      System.out.println("If you have a coupon code please enter it now to see your discounted price. Or type 'Done' if you do not have a coupon.");
+      String couponResponse = console.readLine();
+
+      if (couponResponse.equals(couponCode1)) {
+        double eventCostWithCoupon1 = (eventCost * .8);
+        System.out.println("\nYour updated total cost is $" + df.format(eventCostWithCoupon1));
+        System.out.println("");
+        running = false;
+      } else if (couponResponse.equals(couponCode2)) {
+        int eventCostWithCoupon2 = eventCost - 50;
+        System.out.println("\nYour updated total cost is $" + eventCostWithCoupon2 + ".00.\n");
+        running = false;
+      } else if (couponResponse.equals("Done")) {
+        System.out.println("Thank you for using our Event Planning program. Your total cost is: $" + eventCost);
+        running = false;
+      } else {
+        System.out.println("-----------------------------------------------------");
+        System.out.println("That does not match any coupon code available.");
+        System.out.println("-----------------------------------------------------");
+      }
     }
-
   }
 }
