@@ -27,4 +27,8 @@ public class Event {
   public String getTypeOfFood() {
     return typeOfFood;
   }
+
+  public String getTypeOfDrink() {
+    return "beer";
+  }
 }
