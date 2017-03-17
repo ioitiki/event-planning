@@ -6,7 +6,7 @@
 
 ## Description
 
-_Event Planning is an app developed with Java that calculates the approximate cost of an event based on user selected attributes.  This is all done in the command prompt or terminal.  Users have the option of sushi, vegan, grill, or sandwiches for food; beer, cocktailes, or soda for beverages; and a live band, DJ, or none for entertainment. Once the user has made their choices Event Planning calculates an estimated cost for the event._
+_Event Planning is an app developed with Java that calculates the approximate cost of an event based on user selected attributes.  This is all done in the command prompt or terminal.  Users have several options for each facet of the event including: number of guests, type of food, type of drinks, and type of entertainment.  Once the user has selected their desired event Event Planning will calculate the total cost. _
 
 ## Setup/Installation Requirements
 
