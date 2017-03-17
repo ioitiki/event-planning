@@ -25,6 +25,6 @@ public class Event {
   }
 
   public String getTypeOfFood() {
-    return "test";
+    return typeOfFood;
   }
 }
