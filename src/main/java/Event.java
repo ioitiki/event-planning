@@ -19,4 +19,8 @@ public class Event {
     typeOfDrink = drink;
     typeOfEntertainment = entertainment;
   }
+
+  public int getNumberOfGuests() {
+    return 10;
+  }
 }
