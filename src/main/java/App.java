@@ -9,7 +9,7 @@ public class App {
 
     String couponCode1 = "coupon1";
     String couponCode2 = "coupon2";
-    
+
     System.out.println("-----------------------------------------------------");
     System.out.println("How many guests are you expecting?");
     int userNumberOfGuests = Integer.parseInt(console.readLine());
@@ -33,15 +33,17 @@ public class App {
     System.out.println("-----------------------------------------------------");
     System.out.println("\nYour total cost is $" + eventCost + ".00.\n");
 
-    // System.out.println("__________________________________________________");
-    // System.out.println("If you have a coupon code please enter it now to see your
-    //                     discounted price.");
-    // String userCoupon = console.readLine();
-    //
-    // if (userCoupon.equals("couponCode1")) {
-    //   int eventCostWithCoupon1 = eventCost - user
-    //   System.out.println()
-    // }
+    System.out.println("__________________________________________________");
+    System.out.println("If you have a coupon code please enter it  now to see your discounted price.");
+    String userCoupon = console.readLine();
+
+    if (userCoupon.equals(couponCode1)) {
+      double eventCostWithCoupon1 = (eventCost * .8);
+      System.out.println("\nYour updated total cost is $" + eventCostWithCoupon1);
+    } else if (userCoupon.equals(couponCode2)) {
+      int eventCostWithCoupon2 = eventCost - 50;
+      System.out.println("\nYour updated total cost is $" + eventCostWithCoupon2 + ".00.\n");
+    }
 
   }
 }
